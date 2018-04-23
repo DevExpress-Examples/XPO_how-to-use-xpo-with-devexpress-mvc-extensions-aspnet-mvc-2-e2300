@@ -1,0 +1,66 @@
+<%@ Register TagPrefix="dx" Namespace="DevExpress.Data" Assembly="DevExpress.Data.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxrp" Namespace="DevExpress.Web.ASPxRoundPanel" Assembly="DevExpress.Web.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxnb" Namespace="DevExpress.Web.ASPxNavBar" Assembly="DevExpress.Web.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxm" Namespace="DevExpress.Web.ASPxMenu" Assembly="DevExpress.Web.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register TagPrefix="dxmvc" Namespace="DevExpress.Web.Mvc" Assembly="DevExpress.Web.Mvc.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+<%@ Register Assembly="DevExpress.Web.v10.1, Version=10.1.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.Web.ASPxPanel" TagPrefix="dx" %>
+
+<dxmvc:MVCxNavBar SkinID="NavBarNavigation" runat="server" ImageFolder="~/App_Themes/Aqua/Demo/NavBarNavigation/"
+    CssFilePath="~/App_Themes/Aqua/Demo/NavBarNavigation/styles.css" CssPostfix="AquaNavigation" AutoCollapse="True" GroupSpacing="0px">
+    <CollapseImage Height="9px" Width="7px" Url="~/App_Themes/Aqua/Demo/NavBarNavigation/nbCollapse.png" />
+    <ExpandImage Height="0px" Width="0px" Url="~/App_Themes/Aqua/Demo/NavBarNavigation/nbExpand.gif" />
+    <GroupContentStyle ItemSpacing="3px"></GroupContentStyle>
+</dxmvc:MVCxNavBar>
+
+<dxmvc:MVCxRoundPanel runat="server" SkinID="Banner">
+    <ContentPaddings PaddingTop="29px" PaddingBottom="0px" PaddingLeft="6px" PaddingRight="6px" />
+    <NoHeaderTopLeftCorner Height="6px" Width="6px" Url="~/App_Themes/Aqua/Demo/BannerTopLeftCorner.png" />
+    <NoHeaderTopRightCorner Height="6px" Width="6px" Url="~/App_Themes/Aqua/Demo/BannerTopRightCorner.png" />
+    <BottomLeftCorner Height="6px" Width="6px" Url="~/App_Themes/Aqua/Demo/BannerBottomLeftCorner.png" />
+    <BottomRightCorner Height="6px" Width="6px" Url="~/App_Themes/Aqua/Demo/BannerBottomRightCorner.png" />
+    <Content BackColor="transparent">
+        <BackgroundImage Repeat="NoRepeat" VerticalPosition="top" HorizontalPosition="left" ImageUrl="~/App_Themes/Aqua/Demo/BannerContent.gif" />
+    </Content>
+    <NoHeaderTopEdge BackColor="transparent">
+        <BackgroundImage Repeat="NoRepeat" VerticalPosition="top" HorizontalPosition="left" ImageUrl="~/App_Themes/Aqua/Demo/BannerTopEdge.gif" />
+    </NoHeaderTopEdge>
+    <RightEdge BackColor="transparent">
+        <BackgroundImage Repeat="NoRepeat" VerticalPosition="top" HorizontalPosition="right" ImageUrl="~/App_Themes/Aqua/Demo/BannerRightEdge.gif" />
+    </RightEdge>
+    <BottomEdge BackColor="transparent">
+        <BackgroundImage Repeat="NoRepeat" VerticalPosition="bottom" ImageUrl="~/App_Themes/Aqua/Demo/BannerBottomEdge.gif" />
+    </BottomEdge>
+    <LeftEdge BackColor="transparent">
+        <BackgroundImage Repeat="NoRepeat" VerticalPosition="top" HorizontalPosition="left" ImageUrl="Demo/BannerLeftEdge.gif" />
+    </LeftEdge>
+</dxmvc:MVCxRoundPanel>
+
+<dxmvc:MVCxRoundPanel SkinID="RoundPanelNavigation" runat="server" ShowDefaultImages="False" ShowHeader="False"
+	ImageFolder="~/App_Themes/Aqua/Demo/RoundPanelNavigation/">
+	<BottomRightCorner Height="6px" Url="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpBottomRightCorner.png" Width="6px" />
+	<BottomEdge BackColor="transparent">
+		<BackgroundImage HorizontalPosition="left" ImageUrl="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpContentBottomEdge.gif" Repeat="RepeatX" />
+	</BottomEdge>
+	<BottomLeftCorner Height="6px" Url="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpBottomLeftCorner.png" Width="6px" />
+	<RightEdge BackColor="transparent">
+		<BackgroundImage HorizontalPosition="right" ImageUrl="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpContentRightEdge.gif"
+		Repeat="RepeatY" />
+	</RightEdge>
+	<LeftEdge BackColor="transparent">
+		<BackgroundImage HorizontalPosition="left" ImageUrl="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpContentLeftEdge.gif"
+		Repeat="RepeatY" />
+	</LeftEdge>
+	<NoHeaderTopRightCorner Height="6px" Url="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpNoHeaderTopRightCorner.png" Width="6px" />
+	<NoHeaderTopEdge BackColor="transparent">
+		<BackgroundImage ImageUrl="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpNoHeaderTopEdge.gif" Repeat="RepeatX" VerticalPosition="top" />
+	</NoHeaderTopEdge>
+	<NoHeaderTopLeftCorner Height="6px" Url="~/App_Themes/Aqua/Demo/RoundPanelNavigation/rpNoHeaderTopLeftCorner.png" Width="6px" />
+	<ContentPaddings Padding="0px" />
+	<Border BorderWidth="0px" />
+</dxmvc:MVCxRoundPanel>
+
+<dxmvc:MVCxMenu SkinID="TopMenu" runat="server" 
+    CssPostFix="Demo" CssFilePath="~/App_Themes/Aqua/Demo/styles.css"
+    AutoSeparators="RootOnly" EnableDefaultAppearance="False" ItemLinkMode="TextOnly">
+    <SeparatorPaddings PaddingLeft="7px" PaddingRight="7px" PaddingTop="3px" PaddingBottom="0px" />
+</dxmvc:MVCxMenu>
