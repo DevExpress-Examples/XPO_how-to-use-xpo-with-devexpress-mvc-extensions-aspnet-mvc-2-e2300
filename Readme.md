@@ -1,3 +1,11 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [MainController.cs](./CS/Example/Controllers/MainController.cs)
+* [Customer.cs](./CS/Example/Models/Customer.cs)
+* [GridPartial.ascx](./CS/Example/Views/Main/GridPartial.ascx) (VB: [GridPartial.ascx](./VB/Example/Views/Main/GridPartial.ascx))
+* [XpoHelper.cs](./CS/Example/XpoHelper.cs) (VB: [XpoHelper.vb](./VB/Example/XpoHelper.vb))
+<!-- default file list end -->
 # How to use XPO with DevExpress MVC Extensions (ASP.NET MVC 2)
 
 
